@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+.container_header{
+    display: flex;
+}
+
+.container_01{
+    background-color: #88EC5C;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.introd h1{
+    margin: 0;
+    font-size: 140px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img_bg img{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+}
+
+.container_tit_white{
+    font-family: 'Montserrat', sans-serif;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_content01{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.text_hor{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-align: justify;
+    padding: 40px;
+}
+
+.img_ing img{
+    width: 100%;
+}
+
+.container_tit_green01{
+    font-family: 'Montserrat', sans-serif;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #78CF2B;
+}
+
+.container_content_green01{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #78CF2B;
+}    
+
+.img_cel img{
+    height: 100%;
+}
+
+.img_paises img{
+    width: 100%;
+}
+
+.text_ver{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    text-align: justify;
+    padding: 40px;
+}
+
+.container_content_text_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_tit_green02{
+    font-family: 'Montserrat', sans-serif;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #88EC5C;
+}
+
+.container_content_white{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.img_copa{
+   height: 750px;
+}
+
+.tabela_campeoes{
+    background-color: #88EC5C;
+    height: 1800px;
+}
+
+.tab_camp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab_camp table{
+    margin-top: 70px;
+    font-family:'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+table, td, th{
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    width: 100vh;
+    box-shadow: 20px 30px 20px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+}
+
+th{
+    background-color: #78CF2B;
+}
+
+tr:hover{
+    background-color: #78CF2B;
+}
+
+.text-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_btt{
+    font-family:'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+.btt{
+    display: flex;
+    position: relative;
+    width: 150px;
+    height: 55px;
+    border-radius: 7px;
+    overflow: hidden;   
+    align-items: center;
+    justify-content: center; 
+}
+
+.btt::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(#77ff00, #3f552c);
+    animation: efeito 1.3s ease infinite;
+    transition: 1s ease;
+}
+
+@keyframes efeito{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.text-button:hover .btn::before{
+    background: #77fe00;
+}
+
+#btt_selecao{
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 147px;
+    height: 52px;
+    background: #78CF2B;
+    text-align: center;
+    line-height: 52px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.img_fut_brasil img{
+    padding: 30px;
+    border-radius: 50px;
+}
+
+.img_fut_brasil p{
+    text-align: center;
+    margin-top: 0;
+}
+
+.bg_fut_fem img{
+    width: 100%;
+}
+
+.container_tit_green03{
+    font-family: 'Montserrat', sans-serif;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #58CA3C;
+}
+
+
+
+@media(max-width: 1200px) {
+    .introd h1{
+        font-size: 120px;
+    }
+
+    .img_ing img{
+        height: auto;
+    }
+}
+
+@media(max-width: 1024px) {
+    .introd h1{
+        font-size: 100px;
+    }
+
+    h1{
+        font-size: 60px;
+    }
+
+    .container_01{
+        height: 500px;
+    }
+}
+
+@media(max-width: 768px) {
+    .introd h1{
+        font-size: 80px;
+    }
+
+    .container_01{
+        height: 400px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 500px) {
+    .introd h1{
+        font-size: 60px;
+    }
+
+    .container_01{
+        height: 300px;
+    }
+
+    h1{
+        font-size: 45px;
+    }
+
+    .text_hor{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 445px) {
+
+    .introd h1{
+        font-size: 45px
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    .text_hor{
+        font-size: 15px;
+    }
+
+    .container_01{
+        height: 250px;
+    }
+
+    .container_tit{
+        height: 600px;
+    }
+
+    .text_hor{
+        margin-bottom: 100px;
+        padding: 20px;
+    }
+}
+
+
